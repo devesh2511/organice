@@ -22,6 +22,7 @@
  		'---\n' +
  		'title: ' + document.getElementById('title').value + '\n' + // =title
  		'date: ' + document.getElementById('date').value + '\n' + // =date
+		'time: ' + document.getElementById('time').value + '\n' + // =date
  		'date: ' + today + '\n' + // =date - automatically puts today's date =todo: fix bug allowing going over 60 seconds, i.e. 61 seconds
  		'senses: ' + document.getElementById('senses').value + '\n' + // =senses - select menu
  		'tags: ' + '\n- ' + document.getElementById('tags').value.replace(/,\s/g, "\n- ") + '\n' +
