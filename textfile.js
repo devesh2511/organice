@@ -26,9 +26,7 @@
  		'date: ' + today + '\n' + // =date - automatically puts today's date =todo: fix bug allowing going over 60 seconds, i.e. 61 seconds
  		'senses: ' + document.getElementById('senses').value + '\n' + // =senses - select menu
  		'tags: ' + '\n- ' + document.getElementById('tags').value.replace(/,\s/g, "\n- ") + '\n' +
- 		// =tags
- 		// The replace() bit above converts 'tag,tag' to '- tag\n- tag\n' with regular expressions
- 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+ 	
  		'---\n' + '\n' +
  		document.getElementById('content').value // =content;
 
@@ -52,3 +50,4 @@
  function destroyClickedElement(event) {
  	document.body.removeChild(event.target);
  }
+ 
