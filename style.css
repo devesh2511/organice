@@ -47,7 +47,13 @@ body{
     min-height: 100vh;
     display: flex;
   }
-  
+  @media screen and (max-width: 920px ){
+    .col{
+    display: flex;
+    flex-direction: column;
+    }
+  }
+
   h1 {
     text-align: center;
     margin-bottom: 1em;
